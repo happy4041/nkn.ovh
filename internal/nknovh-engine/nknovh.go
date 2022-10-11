@@ -364,7 +364,7 @@ func (o *NKNOVH) dirtyPoll() error {
 	if err := o.fetchNodesInfo(true); err != nil {
 		return err
 	}
-	o.rmNodesByFcnt(180, 1)
+	o.rmNodesByFcnt(18000, 1)
 	o.rmNodesByFcnt(5040, 0)
 	return nil
 }
